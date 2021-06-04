@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Guide to WebDevelopment-CSS</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top">
+        <div class="container-md"><a href="./index.html" class="navbar-brand mr-auto"><img src="./images/logo.jpg"
+                    alt="Logo" height="30" width="40"> </a><button class="navbar-toggler ml-auto" type="button"
+                data-toggle="collapse" data-target="#navbar"><span class="navbar-toggler-icon"></span></button>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./html.html" class="nav-link">HTML</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active">CSS</a></li>
+                    <li class="nav-item"><a href="./js.html" class="nav-link">JavaScript</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-md-6 offset-md-3"><img class="img-top img-fluid" src="./images/css.png"
+                        alt="center-piece"></div>
+                <div class="col-12 col-md-3"><br></div>
+                <div id="jumbotrondesc" class="col-12 col-md-8 offset-md-2 text-center">
+                    <h2>CSS</h2>Cascading Style Sheets
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active">CSS</li>
+            </ol>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-header">
+            <h1 class="col-12">What Exactly Is CSS?</h1>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header col-12 bg-custom1">
+                        <h1 class="card-title text-white" style="text-align:left"><strong class="carh">Introduction To
+                                CSS</strong></h1>
+                    </div>
+                    <div class="card-body col-12">Cascading Style Sheets (CSS) is a markup language responsible for how
+                        your web pages will look like. It controls the colors, fonts, and layouts of your website
+                        elements.<br><br>This style sheet language also allows you to add effects or animations to your
+                        website. You can use it to display some CSS animations like click button effects, spinners or
+                        loaders, and animated backgrounds.<br></div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="container">
+        <div class="row row-header">
+            <h1 class="col-12">Types of CSS Styles: Inline, Internal and External</h1>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-custom1">
+                        <h2 class="card-title text-white" style="text-align:left"><strong>Inline CSS</strong></h2>
+                    </div>
+                    <div class="card-body"><strong>Explanation</strong><br>Inline CSS is used to style a specific HTML
+                        element. For this CSS style, you’ll only need to add the style attribute to each HTML tag,
+                        without using selectors.<br><br>This CSS type is not really recommended, as each HTML tag needs
+                        to be styled individually. Managing your website may become too hard if you only use inline
+                        CSS.<br><br>However, inline CSS in HTML can be useful in some situations. For example, in cases
+                        where you don’t have access to CSS files or need to apply styles for a single element
+                        only.<br><br><strong>Example</strong><br>Let’s take a look at an example. Here, we add an inline
+                        CSS to the &lt;p> and &lt;h1> tag:
+                        <pre class="prettyprint">
+&lt;!DOCTYPE html>
+&lt;html>
+    &lt;body style="background-color:black;">
+        &lt;h1> style="color:white;padding:30px;">Heading Here&lt;/h1>
+        &lt;p> style="color:white;">Something usefull here.&lt;/p>
+    &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-custom1">
+                        <h2 class="card-title text-white" style="text-align:left"><strong>Internal CSS</strong></h2>
+                    </div>
+                    <div class="card-body"><strong>Explanation</strong><br>Internal or embedded CSS requires you to add
+                        &lt;style> tag in the &lt;head> section of your HTML document.<br><br>This CSS style is an
+                        effective method of styling a single page. However, using this style for multiple pages is
+                        time-consuming as you need to put CSS rules to every page of your
+                        website.<br><br><strong>Example</strong><br>Here’s how you can use internal CSS:<br>1.Open your
+                        HTML page and locate &lt;head> opening tag.<br>2.Put the following code right after the
+                        &lt;head> tag.<br>&lt;style type="text/css"><br>Add CSS rules on a new line. Here’s an
+                        example:<br>
+                        <pre class="prettyprint">
+&lt;!DOCTYPE html>
+&lt;html>
+    &lt;head>
+        &lt;style>
+            body {
+                background-color: blue;
+            }
+            h1 {
+                color: red;
+                padding: 60px;
+            } 
+        &lt;/style>
+     &lt;/head>
+    &lt;body>                   
+        &lt;h1>Heading&lt;/h1>
+        &lt;p>This is our paragraph.&lt;/p>
+    &lt;/body>
+&lt;/html>
+
+</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-custom1">
+                    <h2 class="card-title text-white" style="text-align:left"><strong>External CSS</strong></h2>
+                </div>
+                <div class="card-body"><strong>Explanation</strong><br>With external CSS, you’ll link your web pages to
+                    an external .css file, which can be created by any text editor in your device (e.g.,
+                    Notepad++).<br><br>This CSS type is a more efficient method, especially for styling a large website.
+                    By editing one .css file, you can change your entire site at
+                    once.<br><br><strong>Example</strong><br>Follow these steps to use external CSS:<br>Create a new
+                    .css file with the text editor, and add the style rules.<br>For example:<br>
+                    <pre class="prettyprint">
+.xleftcol {
+    float: left;
+    width: 33%;
+    background:#809900;
+}
+.xmiddlecol {
+    float: left;
+    width: 34%;
+    background:#eff2df;
+}
+</pre>In the &lt;head> section of your HTML sheet, add a reference to your external .css file right after &lt;title>
+                    tag:<br>
+                    <pre class="prettyprint">
+&lt;link rel="stylesheet" type="text/css" href="style.css">
+</pre>Don’t forget to change style.css with the name of your .css file.
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container" id="socials">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center p-3"><a target="_blank" href="https://www.instagram.com/anukshapasayat/"><i
+                                class="fa fa-instagram fa-2x">&nbsp;</i> </a><a target="_blank"
+                            href="https://twitter.com/anukshapasayat"><i class="fa fa-twitter fa-2x">&nbsp;</i> </a><a
+                            target="_blank" href="https://www.facebook.com/saquib.afzal.18"><i
+                                class="fa fa-facebook fa-2x">&nbsp;</i></a></div>
+                </div>
+                <div class="col-12">
+                    <div class="text-center p-3">© Copyright 2021 Anuksha Pasayat and Saquib Afzal</div>
+                </div>
+            </div>
+        </div><button onclick="topFunction()" id="myBtn" title="Go to top"><i
+                class="fa fa-chevron-up fa-lg"></i></button>
+    </footer>
+</body>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+</html>
